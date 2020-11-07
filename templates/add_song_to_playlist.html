@@ -6,4 +6,12 @@
 
 <h1>Add a form that when submitted adds a song to this playlist!</h1>
 
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+
+    {{form.label}}
+    {{form.song}}
+    <button type="submit" class="btn btn-info">Submit</button>
+</form>
+
 {% endblock %}
